@@ -4,7 +4,12 @@ int main()
 {
     ImageProcessor processor;
 
-    processor.processImage("assets/2.png");
+    std::vector<std::string> imagePaths = {
+        "./asset/2.jpg",
+        "./asset/3.jpg",
+    };
+
+    processor.processImage(imagePaths);
 
     return 0;
 }
